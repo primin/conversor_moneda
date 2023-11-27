@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 export default function App() {
-  const [monedas, setMonedas] = useState([]);
   const [moneda1, setMoneda1] = useState('10');
   const [moneda2, setMoneda2] = useState('10');
   const [monto, setMonto] = useState(undefined);
@@ -44,99 +43,99 @@ export default function App() {
     } else
     if(moneda1==20 && moneda2==30) // Peso colombiano
     {
-      resultado = valor*(pesoargentino/pesocolombiano);
+      resultado = monto*(pesoargentino/pesocolombiano);
     } else
     if(moneda1==20 && moneda2==40) // Peso chileno
     {
-      resultado = valor*(pesoargentino/pesochileno); 
+      resultado = monto*(pesoargentino/pesochileno); 
     } else
     if(moneda1==20 && moneda2==50) // Dolares
     {
-      resultado = valor*(pesoargentino/dolar); 
+      resultado = monto*(pesoargentino/dolar); 
     } else
     if(moneda1==20 && moneda2==60) // Soles
     {
-      resultado = valor*(pesoargentino/sol);
+      resultado = monto*(pesoargentino/sol);
     } else // De Pesos colombianos a:
     if(moneda1==30 && moneda2==10) // Bolivianos
     {
-      resultado = valor*pesocolombiano;
+      resultado = monto*pesocolombiano;
     } else
     if(moneda1==30 && moneda2==20) // Pesos argentinos 
     {
-      resultado = valor*(pesocolombiano/pesoargentino);
+      resultado = monto*(pesocolombiano/pesoargentino);
     } else
     if(moneda1==30 && moneda2==40) // Peso chileno
     {
-      resultado = valor*(pesocolombiano/pesochileno);
+      resultado = monto*(pesocolombiano/pesochileno);
     } else
     if(moneda1==30 && moneda2==50) // Dolares 
     {
-      resultado = valor*(pesocolombiano/dolar);
+      resultado = monto*(pesocolombiano/dolar);
     } else
     if(moneda1==30 && moneda2==60) // Soles
     {
-      resultado = valor*(pesocolombiano/sol);
+      resultado = monto*(pesocolombiano/sol);
     } else // De Peso chileno a:
     if(moneda1==40 && moneda2==10) // Bolivianos
     {
-      resultado = valor*pesochileno;
+      resultado = monto*pesochileno;
     } else
     if(moneda1==40 && moneda2==20) // Pesos argentinos
     {
-      resultado = valor*(pesochileno/pesoargentino);
+      resultado = monto*(pesochileno/pesoargentino);
     } else
     if(moneda1==40 && moneda2==30) // Pesos colombianos
     {
-      resultado = valor*(pesochileno/pesocolombiano);
+      resultado = monto*(pesochileno/pesocolombiano);
     } else
     if(moneda1==40 && moneda2==50) // Dolares
     {
-      resultado = valor*(pesochileno/dolar);
+      resultado = monto*(pesochileno/dolar);
     } else
     if(moneda1==40 && moneda2==60) // Soles
     {
-      resultado = valor*(pesochileno/sol);
+      resultado = monto*(pesochileno/sol);
     } else // De Dolares a:
     if(moneda1==50 && moneda2==10) // Bolivianos
     {
-      resultado = valor*dolar;
+      resultado = monto*dolar;
     } else
     if(moneda1==50 && moneda2==20) // Pesos argentinos
     {
-      resultado = valor*(dolar/pesoargentino);
+      resultado = monto*(dolar/pesoargentino);
     } else
     if(moneda1==50 && moneda2==30) // Pesos colombianos
     {
-      resultado = valor*(dolar/pesocolombiano);
+      resultado = monto*(dolar/pesocolombiano);
     } else
     if(moneda1==50 && moneda2==40) // Peso chileno
     {
-      resultado = valor*(dolar/pesochileno);
+      resultado = monto*(dolar/pesochileno);
     } else
     if(moneda1==50 && moneda2==60) // Soles
     {
-      resultado = valor*(dolar/sol);
+      resultado = monto*(dolar/sol);
     } else // De Soles a:
     if(moneda1==60 && moneda2==10) // Bolivianos
     {
-      resultado = valor*sol;
+      resultado = monto*sol;
     } else
     if(moneda1==60 && moneda2==20) // Pesos argentinos
     {
-      resultado = valor*(sol/pesoargentino);
+      resultado = monto*(sol/pesoargentino);
     } else
     if(moneda1==60 && moneda2==30) // Peso colombiano
     {
-      resultado = valor*(sol/pesocolombiano);
+      resultado = monto*(sol/pesocolombiano);
     } else
     if(moneda1==60 && moneda2==40) // Peso chileno
     {
-      resultado = valor*(sol/pesochileno);
+      resultado = monto*(sol/pesochileno);
     } else
     if(moneda1==60 && moneda2==50) // Dolares 
     {
-      resultado = valor*(sol/dolar);
+      resultado = monto*(sol/dolar);
     } else
     if(moneda1===moneda2) // Cuando son iguales 
     {
